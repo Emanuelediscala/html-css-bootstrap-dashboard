@@ -1,0 +1,10 @@
+/* GENERIC RULE  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.bgRed {
+    background-color: red;
+}
