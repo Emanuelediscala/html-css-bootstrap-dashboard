@@ -16,7 +16,7 @@
     background-color: #1b72e8;
 }
 .h100vh {
-    height: calc(100% - 70px);
+    height: calc(100% - 112px);
 }
 .h50px {
     height: 50px;
@@ -27,12 +27,39 @@
 .h100 {
     height: 100%;
 }
+.h80px {
+    height: 80px;
+}
 .h30 {
     height: 30%;
+}
+.wid50 {
+    width: 50px;
+}
+.wid100 {
+    width: 100px;
+}
+.wid150 {
+    width: 150px;
+}
+.widCustom {
+    width: calc(100% - 50px);
 }
 .overflowYscroll {
     overflow-y:auto;
 }
-
+.text10px {
+    font-size: 10px;
+}
+@media screen and (min-width:992px) {
+    .h100lg {
+        height:calc(100% - 70px);
+    }
+}
+@media screen and (min-width:992px) {
+    .wid100lg  {
+        width: 100px;
+    }
+}
 
 
