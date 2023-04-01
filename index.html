@@ -42,7 +42,7 @@
     <main class="d-flex  h100vh h100lg ">
         <!-- SIDEBAR -->
         <div class="d-flex sideBar wid50 wid100lg  col-1">
-            <div class="col-12 d-flex flex-column justify-content-between bgDarkBlue ">
+            <div class="col-12 d-flex flex-column justify-content-between bgdarkBlue ">
                 <div class="row g-3 py-3 ">
                     <div class="col-12 text-center Icons">
                         <i class="fa-solid fa-house text-white ms-lg-1"> <span
@@ -67,9 +67,81 @@
             <!-- Boolean Data -->
             <section>
                 <div class="col-12  p-4  bgBlue row d-md-flex ">
-                    <div class="order-md-2 col-md-3 col-lg-2  d-flex gap-2 gap-lg-2 align-items-center align-items-md-start">
-                        <span class="text-white col-md-10 col-lg-auto mt-md-2 text13pxlg">Nuovo Studente</span>
-                        <button class="col-1 col-md-3 col-lg-auto  btn btn-outline-light">+</button>
+                    <div class="order-md-2 col-md-3 col-lg-2  d-flex gap-2 gap-lg-4 align-items-center align-items-md-start">
+                        <span  class="text-white col-md-10 col-lg-auto mt-md-2 text13pxlg">Nuovo Studente</span>
+                        <button class="btn col-1 col-md-3 col-lg-auto  btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">+</button>
+                        <div class="offcanvas offcanvas-end show w-50 " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci Nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    <form class="col-12  row justify-content-between">
+                                        <div class="mb-3 col-6">
+                                            <label for="exampleInputNome1" class="form-label">Nome</label>
+                                            <input type="name" class="form-control" id="exampleInputNome1" aria-describedby="emailHelp">
+                                            
+                                        </div>
+                                        <div class="mb-3 col-6">
+                                            <label for="exampleInputCognome1" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="exampleInputCognome1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3 col-6 ">
+                                            <label for="" class="form-label">Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="email" class="form-control" id="exampleInputPassword1" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 col-6 ">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 col-12 ">
+                                            <label for="exampleInputindirizzo1" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="exampleInputIndirizzo1">
+                                        </div>
+                                        <div class="mb-3 col-6 ">
+                                            <label for="exampleInputindirizzo1" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="exampleInputIndirizzo1">
+                                        </div>
+                                        <div class="mb-3 col-4 ">
+                                            <label for="exampleInputindirizzo1" class="form-label">Stato</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Scegli</option>
+                                                <option value="1">Italia</option>
+                                                <option value="2">Spagna</option>
+                                                <option value="3">Germania</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-2 ">
+                                            <label for="exampleInputindirizzo1" class="form-label">Cap</label>
+                                            <input type="text" class="form-control" id="exampleInputIndirizzo1">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Seleziona per prseguire</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="submit" class="text-white btn btn-warning">Svota</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="dropdown mt-3">
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4 my-4 m-md-0 col-lg-5 ">
                         <div class="col-12 col-md-10 col-lg-4 d-md-flex align-items-md-center gap-2">
@@ -92,7 +164,7 @@
                 </div>
             </section>
             <!-- CONTAINER DI ENTRAMBI -->
-            <div class="d-lg-flex container-fluid">
+            <div class="d-lg-flex container-fluid ">
                 <div class="row">
                     <!-- TABLE e FAQ -->
                     <div class="col-lg-8 d-flex flex-column">
@@ -296,8 +368,8 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><input type="checkbox"> kickoff Nuove classi</li>
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item "><input type="checkbox"> kickoff Nuove classi</li>
                                         <li class="list-group-item"><input type="checkbox"> Lezione su bootstrap 5 in
                                             classe #75</li>
                                         <li class="list-group-item"><input type="checkbox"> Controllare username github
@@ -311,11 +383,11 @@
                                 <div class="card-body card">
                                     <img class="img-fluid" src="./img/stats.jpeg" alt="">
                                     <h3>Utenti attivi</h3>
-                                    <p class="my-0">La lista degli elementi attivi in piattaforma</p>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gennaio:1200</li>
-                                        <li class="list-group-item">Febbraio:800</li>
-                                        <li class="list-group-item">Marzo:1500</li>
+                                    <p class="">La lista degli elementi attivi in piattaforma</p>
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item p-0 py-1 ">Gennaio:1200</li>
+                                        <li class="list-group-item p-0 py-1">Febbraio:800</li>
+                                        <li class="list-group-item p-0 py-1">Marzo:1500</li>
                                     </ul>
                                     <div class="card-body p-1 mt-2">
                                         <a href="">Visualizza report approfondito</a>

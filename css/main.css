@@ -10,7 +10,9 @@
     background-color: #f8f9fa;
 }
 .bgDarkBlue {
-    background-color: #051e34;
+    background-image: url(..//img/sidebar-bg.png);
+    background-color:#051e34 ;
+
 }
 .bgBlue {
     background-color: #1b72e8;
@@ -59,6 +61,7 @@
 }
 .bgGray {
     background-color: #e5e5e5;
+
 }
 .fa-pen {
     border:2px solid gray;
