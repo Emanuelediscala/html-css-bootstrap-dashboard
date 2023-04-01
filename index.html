@@ -30,11 +30,20 @@
                     <input class="form-control  me-2 bgGray " type="search"
                         placeholder="&#128269; Prova a cercare lezioni di laravel" aria-label="Search">
                 </div>
-                <div class="col-1 col-lg-2 text-center text-lg-start d-lg-flex justify-content-lg-evenly">
+                <div class="col-1 col-lg-2 text-center text-lg-start d-lg-flex justify-content-lg-evenly align-items-center">
                     <i class="fa-solid fa-bars d-none d-lg-inline-flex"></i>
                     <i class="fa-solid fa-circle-question d-none d-lg-inline-flex mx-1"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-flex mx-1"></i>
-                    <i class="fa-solid fa-bell orange"></i>
+                    <div class="dropdown">    
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell orange"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -147,15 +156,15 @@
                     <div class="col-12 col-md-4 my-4 m-md-0 col-lg-5 ">
                         <div class="col-12 col-md-10 col-lg-4 d-md-flex align-items-md-center gap-2">
                             <h3 class="text-white d-inline m-0">Boolean</h3>
-                            <span class=" badge rounded-pill  bg-dark opacity-25 text10pxlg">Piano blaze</span>
+                            <span class=" badge rounded-pill  bg-dark bg-opacity-25  text10pxlg">Piano blaze</span>
                         </div>
                         <div class="col-12 col-md-7 col-lg-12 d-md-flex align-items-md-center gap-1">
-                            <span class="badge rounded-pill bg-dark opacity-25 text10pxlg">3 App</span>
+                            <span class="badge rounded-pill bg-dark bg-opacity-25 text10pxlg">3 App</span>
                             <span class="text-white text10pxlg">>></span>
-                            <span class="badge rounded-pill bg-dark opacity-25 d-lg-none">+</span>
-                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg d-lg-inline-block">Boolean Mobile app</span>
-                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg d-lg-inline-block">Boolean web app</span>
-                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg d-lg-inline-block">Boolean Blog app</span>
+                            <span class="badge rounded-pill bg-dark bg-opacity-25 d-lg-none">+</span>
+                            <span class="badge rounded-pill bg-dark bg-opacity-25 d-none text10pxlg d-lg-inline-block">Boolean Mobile app</span>
+                            <span class="badge rounded-pill bg-dark bg-opacity-25 d-none text10pxlg d-lg-inline-block">Boolean web app</span>
+                            <span class="badge rounded-pill bg-dark bg-opacity-25 d-none text10pxlg d-lg-inline-block">Boolean Blog app</span>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4">
