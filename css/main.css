@@ -15,6 +15,12 @@
 .bgBlue {
     background-color: #1b72e8;
 }
+.bgGray {
+    background-color: #e5e5e5;
+}
+.bgGrayTwo {
+    background-color: #f7f7f7;
+}
 .h100vh {
     height: calc(100% - 112px);
 }
@@ -47,6 +53,12 @@
 }
 .overflowYscroll {
     overflow-y:auto;
+}
+.orange {
+    color: #ff8f00;
+}
+.bgGray {
+    background-color: #e5e5e5;
 }
 
 @media screen and (min-width:992px) {
