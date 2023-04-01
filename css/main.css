@@ -60,6 +60,20 @@
 .bgGray {
     background-color: #e5e5e5;
 }
+.fa-pen {
+    border:2px solid gray;
+    color: gray;
+    padding: 5px;
+}
+.fa-trash {
+    border:2px solid gray;
+    color: gray;
+    padding: 5px;
+}
+.sideBar .Icons:hover {
+    background-color: gray;
+    cursor: pointer;
+}
 
 @media screen and (min-width:992px) {
     .h100lg {
