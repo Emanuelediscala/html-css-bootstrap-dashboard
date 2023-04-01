@@ -48,12 +48,16 @@
 .overflowYscroll {
     overflow-y:auto;
 }
-.text10px {
-    font-size: 10px;
-}
+
 @media screen and (min-width:992px) {
     .h100lg {
         height:calc(100% - 70px);
+    }
+    .text10pxlg {
+        font-size: 10px;
+    }
+    .text13pxlg {
+        font-size: 13px;
     }
 }
 @media screen and (min-width:992px) {

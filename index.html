@@ -20,17 +20,17 @@
 
 <body>
     <header class="bgDirtywhite py-3">
-        <nav>
+        <nav class="container-fluid">
             <div class="d-flex  align-items-center justify-content-between bg-white">
                 <div class="col-auto">
                     <img src="./img/logo.svg" class="d-none d-lg-inline-flex" alt="">
                     <img src="./img/mobile-logo.png" class="h80px  d-lg-none" alt="">
                 </div>
-                <div class="col-8 col-lg-9">
+                <div class="col-8 col-lg-8">
                     <input class="form-control me-2 bg-light " type="search"
                         placeholder="&#128269; Prova a cercare lezioni di laravel" aria-label="Search">
                 </div>
-                <div class="col-1 text-center text-lg-start">
+                <div class="col-1 col-lg-2 text-center text-lg-start d-lg-flex justify-content-lg-evenly">
                     <i class="fa-solid fa-bars d-none d-lg-inline-flex"></i>
                     <i class="fa-solid fa-circle-question d-none d-lg-inline-flex mx-1"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-flex mx-1"></i>
@@ -66,35 +66,28 @@
         <div class="widCustom overflowYscroll">
             <!-- Boolean Data -->
             <section>
-                <div
-                    class="col-12 p-4 bgBlue d-flex flex-column flex-md-row  align-items-md-start gap-md-3 justify-content-md-between justify-content-lg-between">
-                    <div
-                        class="order-md-2 d-flex align-items-center justify-content-md-between d-md-flex col-lg-2 align-items-lg-center  justify-content-lg-around align-items-md-start">
-                        <span class="text-white  col-lg-auto">Nuovo Studente</span>
-                        <button class="col-1 col-md-0 btn btn-outline-light p-1 ms-3 ms-md-0 p-md-0">+</button>
+                <div class="col-12  p-4  bgBlue row d-md-flex ">
+                    <div class="order-md-2 col-md-3 col-lg-3  d-flex gap-2 gap-lg-0 align-items-center align-items-md-start">
+                        <span class="text-white col-md-10 col-lg-8 mt-md-2 text13pxlg">Nuovo Studente</span>
+                        <button class="col-1 col-md-3 col-lg-auto  btn btn-outline-light">+</button>
                     </div>
-                    <div class=" my-4 col-md-4 col-6  my-md-0 col-lg-3 d-lg-flex flex-lg-wrap gap-lg-2">
-                        <h3 class="text-white d-inline m-0">Boolean</h3>
-                        <button class="btn btn-outline-light py-0">Piano Blaze</button>
-                        <button
-                            class="btn btn-outline-light py-0 mt-2 mt-md-0 offset-md-1 offset-lg-0 d-lg-none mt-lg-0">3app</button>
-                        <span class="text-white d-lg-none mt-2 mt-md-0">>></span>
-                        <div class="d-none d-lg-flex align-items-center">
-                            <button class="text10px col-2 btn btn-outline-light d-none d-lg-inline-block p-0">3
-                                App</button>
-                            <span class="text-white d-none d-lg-inline-block mt-2 mt-md-0">>></span>
-                            <button class="col-4 text10px btn btn-outline-light d-none d-lg-inline-block p-0">Boolean
-                                mobile app</button>
-                            <button class="col-4 text10px btn btn-outline-light d-none d-lg-inline-block p-0">Boolean
-                                web app</button>
-                            <button class="col-4 text10px btn btn-outline-light d-none d-lg-inline-block p-0">Boolean
-                                blog app</button>
+                    <div class="col-12 col-md-4 my-4 m-md-0 col-lg-5 ">
+                        <div class="col-12 col-md-10 col-lg-4 d-md-flex align-items-md-center gap-2">
+                            <h3 class="text-white d-inline m-0">Boolean</h3>
+                            <span class="badge rounded-pill  bg-dark opacity-25 text10pxlg">Piano blaze</span>
                         </div>
-                        <button class="btn btn-outline-light py-0 mt-2 mt-md-0  d-lg-none">+</button>
+                        <div class="col-12 col-md-7 col-lg-12 d-md-flex align-items-md-center gap-1">
+                            <span class="badge rounded-pill bg-dark opacity-25 text10pxlg">3 App</span>
+                            <span class="text-white text10pxlg">>></span>
+                            <span class="badge rounded-pill bg-dark opacity-25 d-lg-none">+</span>
+                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg">Boolean Mobile app</span>
+                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg">Boolean web app</span>
+                            <span class="badge rounded-pill bg-dark opacity-25 d-none text10pxlg">Boolean Blog app</span>
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-white my-0 col-md-auto">Studenti online negli ultimi <br> 30 minuti</p>
-                        <span class="h3 text-white">125</span>
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <p class="text-white m-0 text13pxlg">Studenti online negli ultimi 30 minuti</p>
+                        <h3 class="text-white mt-1 m-md-0">125</h3>
                     </div>
                 </div>
             </section>
@@ -313,23 +306,23 @@
                             </div>
                         </section>
                         <section class="col-12 p-2 ">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <img class="img-fluid" src="./img/stats.jpeg" alt="">
-                                            <h3>Utenti attivi</h3>
-                                            <p class="my-0">La lista degli elementi attivi in piattaforma</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Gennaio:1200</li>
-                                            <li class="list-group-item">Febbraio:800</li>
-                                            <li class="list-group-item">Marzo:1500</li>
-                                        </ul>
-                                    </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="img-fluid" src="./img/stats.jpeg" alt="">
+                                    <h3>Utenti attivi</h3>
+                                    <p class="my-0">La lista degli elementi attivi in piattaforma</p>
                                 </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Gennaio:1200</li>
+                                    <li class="list-group-item">Febbraio:800</li>
+                                    <li class="list-group-item">Marzo:1500</li>
+                                </ul>
                             </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
     </main>
     <footer>
 
